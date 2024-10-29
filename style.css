@@ -31,7 +31,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  overflow: hidden;
 }
 
 .item {
@@ -40,6 +39,11 @@ body {
   background-color: lightgray;
   border: none;
   border-radius: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.item p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
